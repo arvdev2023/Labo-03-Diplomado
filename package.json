@@ -1,0 +1,25 @@
+{
+  "name": "labo-03-diplomado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvdev2023/Labo-03-Diplomado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvdev2023/Labo-03-Diplomado/issues"
+  },
+  "homepage": "https://github.com/arvdev2023/Labo-03-Diplomado#readme",
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.31.2"
+  }
+}
