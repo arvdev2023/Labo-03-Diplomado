@@ -2,26 +2,19 @@ import { test, expect } from '@playwright/test';
 import { Pagina } from '../core/Pagina';
 
 let pageInstance: Pagina = new Pagina();
-test.skip('Test 02 Laboratorio 03', async ({ page }) => {
+let arrayChecks = [
+    '//input[@id="remote-testing"]',
+    '//input[@id="reusing-js-code"]',
+    '//input[@id="background-parallel-testing"]',
+    '//input[@id="continuous-integration-embedding"]',
+    '//input[@id="traffic-markup-analysis"]'
+]
+test('Test 02 Laboratorio 03', async ({ page }) => {
     await page.goto(pageInstance.getLinkPage());
-});
-function defineChecks(numberChecks: number) {
-    switch (numberChecks) {
-        case 1: {
-            break;
-        }
-        case 2: {
-            break;
-        }
-        case 3: {
-            break;
-        }
-        case 4: {
-            break;
-        }
-        case 5: {
-            break;
-        }
+    for (let i = 0; i < arrayChecks.length; i++) {
+        let elementCheck = page.locator(arrayChecks[i]);
+        await elementCheck.click()
     }
-}
+});
+
 
