@@ -5,7 +5,7 @@ let paginaInstancia = new Pagina();
 let selectorCombo = '//select[@id="preferred-interface"]';
 let arrayOptions = ['JavaScript API', 'Both', 'Command Line'];
 
-test.skip('test', async ({ page }) => {
+test('Test 04 Laboratorio 04', async ({ page }) => {
     await page.goto(paginaInstancia.getLinkPage());
     let elementSelect = page.locator(selectorCombo);
     await elementSelect.selectOption(arrayOptions[2]);

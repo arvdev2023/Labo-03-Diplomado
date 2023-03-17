@@ -4,7 +4,7 @@ import { Pagina } from '../core/Pagina';
 let pageInstance: Pagina = new Pagina();
 let locatorInput = '//input[@id="developer-name"]';
 let locatorSubmit = '//input[@id="populate"]';
-test.skip('Test 01 Laboratorio 03', async ({ page }) => {
+test('Test 01 Laboratorio 03', async ({ page }) => {
 
     await page.goto(pageInstance.getLinkPage());
     let selectorInput = page.locator(locatorInput);

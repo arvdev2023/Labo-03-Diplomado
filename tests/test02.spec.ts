@@ -8,7 +8,7 @@ let selRadioMac = '//input[@id="macos"]'
 let selRadioLinux = '//input[@id="linux"]'
 
 
-test.skip('Test 02 Laboratorio 03', async ({ page }) => {
+test('Test 02 Laboratorio 03', async ({ page }) => {
     let currentLocator = page.locator(selRadioWindows);
     
     await page.goto(pageInstance.getLinkPage());

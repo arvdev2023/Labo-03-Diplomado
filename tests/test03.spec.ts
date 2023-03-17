@@ -9,7 +9,7 @@ let arrayChecks = [
     '//input[@id="continuous-integration-embedding"]',
     '//input[@id="traffic-markup-analysis"]'
 ]
-test('Test 02 Laboratorio 03', async ({ page }) => {
+test('Test 03 Laboratorio 03', async ({ page }) => {
     await page.goto(pageInstance.getLinkPage());
     for (let i = 0; i < arrayChecks.length; i++) {
         let elementCheck = page.locator(arrayChecks[i]);
